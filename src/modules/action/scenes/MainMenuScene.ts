@@ -17,7 +17,11 @@ export class MainMenuScene extends Phaser.Scene {
         this.load.image('hostage', 'assets/themes/default/images/hostage.png');
         this.load.image('boss', 'assets/themes/default/images/boss.png');
         this.load.image('fpv_gun', 'assets/themes/default/images/fpv_gun.png');
-        this.load.audio('gunshot', 'assets/themes/default/sounds/gunshot.wav');
+                this.load.audio('v_robber', 'assets/themes/default/sounds/v_robber.wav');
+        this.load.audio('v_player', 'assets/themes/default/sounds/v_player.wav');
+        this.load.audio('v_hostage', 'assets/themes/default/sounds/v_hostage.wav');
+        this.load.audio('v_ninja', 'assets/themes/default/sounds/v_ninja.wav');
+        this.load.audio('gunshot', 'assets/themes/default/sounds/gunshot.wav?v=3');
         this.load.audio('empty', 'assets/themes/default/sounds/empty.wav');
         this.load.audio('reload', 'assets/themes/default/sounds/reload.wav');
         this.load.audio('voice_reload', 'assets/themes/default/sounds/voice_reload.wav');

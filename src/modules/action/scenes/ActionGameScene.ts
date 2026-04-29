@@ -582,11 +582,17 @@ export class ActionGameScene extends Phaser.Scene {
                 // Only allow shooting if they are ready (finished running/charging) or if they are charging (can shoot mid-air)
                 if (Phaser.Geom.Rectangle.Contains(hitArea, x, y)) {
                     if (entity.type === 'hostage') {
+                        this.sound.play('v_hostage', { volume: 1.0 });
                         const penaltyText = this.add.text(x, y - 100, '-20 HEALTH!', { fontSize: '40px', color: '#ff0000', stroke: '#ffffff', strokeThickness: 4 }).setOrigin(0.5).setDepth(100);
                         this.tweens.add({ targets: penaltyText, y: y - 200, alpha: 0, duration: 1000, onComplete: () => penaltyText.destroy() });
                         this.takeDamage(20);
                         this.removeEntity(entity.sprite, false);
                     } else {
+                        if (entity.sprite.texture.key === 'enemy_aiming_3') {
+                            this.sound.play('v_ninja', { volume: 1.0 });
+                        } else {
+                            this.sound.play('v_robber', { volume: 1.0 });
+                        }
                         this.playerStats.score += 100;
                         this.playerStats.scoreText.setText('Score: ' + this.playerStats.score);
                         
