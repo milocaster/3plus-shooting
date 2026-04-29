@@ -9,24 +9,24 @@ export class MainMenuScene extends Phaser.Scene {
 
     preload() {
         // Preload all game assets here
-        this.load.image('bg_stage1', '/assets/themes/default/images/bg.png');
-        this.load.image('bg_stage2', '/assets/themes/default/images/bg_stage2.png');
-        this.load.image('enemy_aiming', '/assets/themes/default/images/enemy_aiming.png');
-        this.load.image('enemy_aiming_2', '/assets/themes/default/images/enemy_aiming_2.png');
-        this.load.image('enemy_aiming_3', '/assets/themes/default/images/enemy_aiming_3.png');
-        this.load.image('hostage', '/assets/themes/default/images/hostage.png');
-        this.load.image('boss', '/assets/themes/default/images/boss.png');
-        this.load.image('fpv_gun', '/assets/themes/default/images/fpv_gun.png');
-        this.load.audio('gunshot', '/assets/themes/default/sounds/gunshot.wav');
-        this.load.audio('empty', '/assets/themes/default/sounds/empty.wav');
-        this.load.audio('reload', '/assets/themes/default/sounds/reload.wav');
-        this.load.audio('voice_reload', '/assets/themes/default/sounds/voice_reload.wav');
-        this.load.audio('bgm_title', '/assets/themes/default/sounds/Title Game.wav?v=2');
-        this.load.audio('bgm_stage1', '/assets/themes/default/sounds/Stage1.wav?v=2');
-        this.load.audio('bgm_stage2', '/assets/themes/default/sounds/Stage2.wav?v=2');
-        this.load.audio('bgm_stage3', '/assets/themes/default/sounds/Stage3.wav?v=2');
-        this.load.audio('bgm_boss', '/assets/themes/default/sounds/BOSS FIGHT.wav?v=2');
-        this.load.image('coin', '/assets/themes/default/images/coin.png');
+        this.load.image('bg_stage1', 'assets/themes/default/images/bg.png');
+        this.load.image('bg_stage2', 'assets/themes/default/images/bg_stage2.png');
+        this.load.image('enemy_aiming', 'assets/themes/default/images/enemy_aiming.png');
+        this.load.image('enemy_aiming_2', 'assets/themes/default/images/enemy_aiming_2.png');
+        this.load.image('enemy_aiming_3', 'assets/themes/default/images/enemy_aiming_3.png');
+        this.load.image('hostage', 'assets/themes/default/images/hostage.png');
+        this.load.image('boss', 'assets/themes/default/images/boss.png');
+        this.load.image('fpv_gun', 'assets/themes/default/images/fpv_gun.png');
+        this.load.audio('gunshot', 'assets/themes/default/sounds/gunshot.wav');
+        this.load.audio('empty', 'assets/themes/default/sounds/empty.wav');
+        this.load.audio('reload', 'assets/themes/default/sounds/reload.wav');
+        this.load.audio('voice_reload', 'assets/themes/default/sounds/voice_reload.wav');
+        this.load.audio('bgm_title', 'assets/themes/default/sounds/Title Game.wav?v=2');
+        this.load.audio('bgm_stage1', 'assets/themes/default/sounds/Stage1.wav?v=2');
+        this.load.audio('bgm_stage2', 'assets/themes/default/sounds/Stage2.wav?v=2');
+        this.load.audio('bgm_stage3', 'assets/themes/default/sounds/Stage3.wav?v=2');
+        this.load.audio('bgm_boss', 'assets/themes/default/sounds/BOSS FIGHT.wav?v=2');
+        this.load.image('coin', 'assets/themes/default/images/coin.png');
     }
 
     create() {
